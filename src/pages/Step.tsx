@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import { RouteComponentProps } from 'react-router-dom'
 import axios from 'axios'
-import {APICONFIG} from 'services/api-config';
-import {StepCases} from 'components/StepCases';
+import {APICONFIG} from 'services/api-config'
+import {StepCases} from 'components/StepCases'
+import CaseModel from 'models/case-model'
 
 interface MatchParams{
   stepId: string
@@ -12,11 +13,6 @@ interface StateParams{
   loadingCases: boolean,
   stepId: number,
   cases: Array<CaseModel>
-}
-
-export type CaseModel = {
-  id: number,
-  name?: string
 }
 
 export class Step extends Component<RouteComponentProps<MatchParams>> {
