@@ -16,7 +16,7 @@ interface Props {
 
 interface StateParams {
   loadingMethods: boolean,
-  methods: Array<MethodType>
+  methods: MethodType[]
 }
 
 type MethodType = {

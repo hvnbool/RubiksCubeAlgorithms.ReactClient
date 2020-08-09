@@ -5,7 +5,7 @@ import { ListGroup } from 'react-bootstrap'
 import Case from 'components/Case'
 
 type Props = {
-  cases: Array<CaseModel>
+  cases: CaseModel[]
 }
 
 export const StepCases : FunctionComponent<Props> = ({cases}) => {

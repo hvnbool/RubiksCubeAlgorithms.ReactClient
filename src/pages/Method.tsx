@@ -14,7 +14,7 @@ interface MatchParams {
 interface StateParams {
   loadingSteps: boolean,
   methodId: number,
-  steps: Array<Step>
+  steps: Step[]
 }
 
 type Step = {

@@ -12,7 +12,7 @@ interface MatchParams{
 interface StateParams{
   loadingCases: boolean,
   stepId: number,
-  cases: Array<CaseModel>
+  cases: CaseModel[]
 }
 
 export class Step extends Component<RouteComponentProps<MatchParams>> {
